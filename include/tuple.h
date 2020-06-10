@@ -1,6 +1,8 @@
 #ifndef __PRETTY_LOG_TUPLE__
 #define __PRETTY_LOG_TUPLE__
 
+#include <ostream>
+
 #include <tuple>
 template<std::size_t I = 0, class... T>
 static typename std::enable_if<I == sizeof...(T), void>::type
