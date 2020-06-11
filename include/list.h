@@ -1,6 +1,8 @@
 #ifndef __PRETTY_LOG_LIST__
 #define __PRETTY_LOG_LIST__
 
+#include <ostream>
+
 #include <list>
 #include <sstream>
 #include <string>
