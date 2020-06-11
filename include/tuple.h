@@ -11,7 +11,7 @@
 
 template<std::size_t I = 0, class... T>
 static typename std::enable_if<I == sizeof...(T), void>::type
-  __print_tuples(const std::tuple<T...>& t, std::ostringstream& sout))
+  __print_tuples(const std::tuple<T...>& t, std::ostringstream& sout)
 { }
 
 template<std::size_t I = 0, class... T>
@@ -23,7 +23,7 @@ static typename std::enable_if<I < sizeof...(T), void>::type
     sout<<", ";
   }
     
-  sout << std::get<I>(t, sout);
+  sout << std::get<I>(t);
   __print_tuples<I+1, T...>(t, sout);
 }
 
@@ -46,5 +46,4 @@ std::ostream& operator<<(std::ostream& os, const std::tuple<T...>& t)
   
   return os;
 }
-
 #endif
