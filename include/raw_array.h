@@ -13,7 +13,7 @@ std::string to_string(const T(&arr)[Len])
   
   size_t i = 0;
   
-  if(i!=(Len-1))
+  if(i!=Len)
   {
     sout<<arr[i];
     i++;
