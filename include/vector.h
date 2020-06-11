@@ -1,4 +1,7 @@
 #ifndef __PRETTY_LOG_VECTOR__
+#define __PRETTY_LOG_VECTOR__
+
+#include <ostream>
 
 #include <sstream>
 #include <string>
@@ -37,3 +40,5 @@ std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
   
   return os;
 }
+
+#endif
