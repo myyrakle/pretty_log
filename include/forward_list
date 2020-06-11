@@ -1,5 +1,5 @@
-#ifndef __PRETTY_LOG_LIST__
-#define __PRETTY_LOG_LIST__
+#ifndef __PRETTY_LOG_FORWARD_LIST__
+#define __PRETTY_LOG_FORWARD_LIST__
 
 #include <ostream>
 
