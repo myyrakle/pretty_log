@@ -12,7 +12,7 @@ std::string to_string(const std::list<T>& li)
 {
   std::ostringstream sout;
   
-  sout<<"list [";
+  sout<<"list [ ";
   
   auto it = li.begin();
   
@@ -28,7 +28,7 @@ std::string to_string(const std::list<T>& li)
     it++;
   }
   
-  sout<<']';
+  sout<<" ]";
   
   return sout.str();
 }

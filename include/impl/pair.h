@@ -11,7 +11,7 @@ std::string to_string(const std::pair<T1, T2>& p)
 {
   std::ostringstream sout;
   
-  sout<<"pair ("<<p.first<<", "<<p.second<<")";
+  sout<<"pair ( "<<p.first<<", "<<p.second<<" )";
   
   return sout.str();
 }

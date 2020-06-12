@@ -12,7 +12,7 @@ std::string to_string(const std::forward_list<T>& li)
 {
   std::ostringstream sout;
   
-  sout<<"forward_list [";
+  sout<<"forward_list [ ";
   
   auto it = li.begin();
   
@@ -28,7 +28,7 @@ std::string to_string(const std::forward_list<T>& li)
     it++;
   }
   
-  sout<<']';
+  sout<<" ]";
   
   return sout.str();
 }

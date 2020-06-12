@@ -10,7 +10,7 @@ std::string to_string(const std::deque<T>& deq)
 {
   std::ostringstream sout;
   
-  sout<<"set [ ";
+  sout<<"deque [ ";
   
   auto it = deq.begin();
   

@@ -9,7 +9,7 @@ std::string to_string(const T(&arr)[Len])
 {
   std::ostringstream sout;
   
-  sout<<"raw array [";
+  sout<<"raw array [ ";
   
   size_t i = 0;
   
@@ -25,7 +25,7 @@ std::string to_string(const T(&arr)[Len])
     i++;
   }
   
-  sout<<']';
+  sout<<" ]";
   
   return sout.str();
 }

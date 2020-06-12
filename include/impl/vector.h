@@ -12,7 +12,7 @@ std::string to_string(const std::vector<T>& vec)
 {
   std::ostringstream sout;
   
-  sout<<"vector [";
+  sout<<"vector [ ";
   
   auto it = vec.begin();
   
@@ -28,7 +28,7 @@ std::string to_string(const std::vector<T>& vec)
     it++;
   }
   
-  sout<<']';
+  sout<<" ]";
   
   return sout.str();
 }

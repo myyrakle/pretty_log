@@ -4,6 +4,7 @@
 #include <map>
 #include <sstream>
 #include <string>
+#include <ostream>
 
 template <class K, class V>
 std::string to_string(const std::map<K, V>& m)
@@ -16,13 +17,13 @@ std::string to_string(const std::map<K, V>& m)
   
   if(it!=m.end())
   {
-    sout<<it->first<<":"<<it->second;
+    sout<< it->first << ":" << it->second;
     it++;
   }
   
   while(it!=m.end())
   {
-    sout<<", "<<it->first<<":"<<it->second;
+    sout<<", "<< it->first << ":" << it->second;
     it++;
   }
   
@@ -30,8 +31,6 @@ std::string to_string(const std::map<K, V>& m)
   
   return sout.str();
 }
-
-#include <ostream>
 
 template <class K, class V>
 std::ostream& operator<<(std::ostream& os, const std::map<K, V>& m)
@@ -78,6 +77,5 @@ std::ostream& operator<<(std::ostream& os, const std::multimap<K, V>& m)
   
   return os;
 }
-
 
 #endif

@@ -32,9 +32,9 @@ std::string to_string(const std::tuple<T...>& t)
 {
   std::ostringstream sout;
 
-  sout<<"tuple (";
+  sout<<"tuple ( ";
   __print_tuples(t, sout);
-  sout<<")";
+  sout<<" )";
   
   return sout.str();
 }

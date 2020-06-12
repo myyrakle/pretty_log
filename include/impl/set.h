@@ -1,16 +1,16 @@
-#ifndef __PRETTY_LOG_UNORDERED_SET__
-#define __PRETTY_LOG_UNORDERED_SET__
+#ifndef __PRETTY_LOG_SET__
+#define __PRETTY_LOG_SET__
 
-#include <unordered_set>
+#include <set>
 #include <sstream>
 #include <string>
 
 template <class T>
-std::string to_string(const std::unordered_set<T>& s)
+std::string to_string(const std::set<T>& s)
 {
   std::ostringstream sout;
   
-  sout<<"unordered_set { ";
+  sout<<"set { ";
   
   auto it = s.begin();
   
@@ -34,7 +34,7 @@ std::string to_string(const std::unordered_set<T>& s)
 #include <ostream>
 
 template <class T>
-std::ostream& operator<<(std::ostream& os, const std::unordered_set<T>& s)
+std::ostream& operator<<(std::ostream& os, const std::set<T>& s)
 {
   os<<to_string(s);
   
@@ -44,11 +44,11 @@ std::ostream& operator<<(std::ostream& os, const std::unordered_set<T>& s)
 
 
 template <class T>
-std::string to_string(const std::unordered_multiset<T>& s)
+std::string to_string(const std::multiset<T>& s)
 {
   std::ostringstream sout;
   
-  sout<<"unordered_multiset { ";
+  sout<<"multiset { ";
   
   auto it = s.begin();
   
@@ -72,7 +72,7 @@ std::string to_string(const std::unordered_multiset<T>& s)
 #include <ostream>
 
 template <class T>
-std::ostream& operator<<(std::ostream& os, const std::unordered_multiset<T>& s)
+std::ostream& operator<<(std::ostream& os, const std::multiset<T>& s)
 {
   os<<to_string(s);
   
