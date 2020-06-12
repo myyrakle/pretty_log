@@ -1,8 +1,9 @@
 #ifndef __PRETTY_LOG__
 #define __PRETTY_LOG__
 
-#include "impl/vector.h"
 #include "impl/array.h"
+#include "impl/deque.h"
+#include "impl/vector.h"
 //#include "impl/raw_array.h"
 #include "impl/list.h"
 #include "impl/forward_list.h"
